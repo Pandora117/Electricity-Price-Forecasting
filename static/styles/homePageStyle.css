@@ -9,6 +9,11 @@
   src: url("static/assets/fonts/Belleza-Regular.ttf");
 }
 
+@font-face {
+  font-family: Aileron;
+  src: url("static/assets/fonts/Aileron-Regular.otf");
+}
+
 /* ----------------------------------Default CSS---------------------------------- */
 * {
   margin: 5px;
@@ -24,6 +29,7 @@ body {
   background: linear-gradient(90deg, #ff0f7b, #f89b29);
   padding: 10px;
   border-radius: 100px 800px 10px 800px;
+  box-shadow: 70px 70px 130px 7px rgba(100, 30, 22, 0.8);
   width: 75%;
   margin: auto;
 }
@@ -31,42 +37,41 @@ body {
 .heading_container {
   padding: 15px 15px 15px 80px;
   margin-bottom: 2px;
-  font-family: "Quicksand Light", sans-serif;
   text-align: left;
   color: #FFF;
 
   background: rgba(40, 116, 166, 0.3);
-  /*border-radius: 16px;*/
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-
-
   border-radius: 150px 600px 50px 0;
 }
 
 h1 {
-  font-size: 48px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  font-size: 70px;
 }
 
 .name {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
   text-align: left;
-  /*margin-left: 5%;*/
   font-weight: 300;
 }
 
 .mentor {
     text-align: right;
     margin-right: 5%;
-    /*font-size: 20px;*/
     font-family: "Quicksand", sans-serif;
+  font-size: 20px;
     font-style: italic;
     font-weight: 300;
 }
 
 #mentor_name {
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Quicksand", sans-serif;
     font-style: italic;
     font-weight: 500;
@@ -75,7 +80,7 @@ h1 {
 }
 
 .p_container {
-  background: linear-gradient(90deg, #c31432, #240b36);
+  background: linear-gradient(270deg, #c31432, #240b36);
   padding: 15px 100px 15px 70px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
@@ -85,15 +90,15 @@ h1 {
 
 /* ----------------------------------Input Fields CSS---------------------------------- */
 .container_input {
-  width: 90%;
+  width: 80%;
   margin: 10px auto;
   padding: 50px;
-  background-image: url("../assets/images/power_plant_crop.jpg");
+  background-image: url("../assets/images/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
   border-radius: 10px 150px 10px 150px;
-  /*box-shadow: 70px 70px 130px 7px rgba(74, 35, 90, 1);*/
+  box-shadow: 70px 70px 130px 7px rgba(27, 79, 114, 0.8);
   z-index: -10;
 }
 
@@ -101,7 +106,7 @@ h1 {
   padding: 50px;
   background: rgba(93, 173, 226, 0.2);
   /*border-radius: 16px;*/
-  /*border: 1px solid #AED6F1;*/
+  border: 1px solid #AED6F1;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -174,19 +179,17 @@ input[type=number] {
   display: block;
   text-align: left;
   padding-left: 20px;
-  margin-top: 15px;
+  margin: 10px auto;
   align-items: center;
 }
 
 /* ----------------------------------Button CSS---------------------------------- */
 .button_container {
-  /*background: blue;*/
-  background: rgb(114, 188, 238, 0.4);
-  /*border-radius: 16px;*/
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  /*background: rgb(114, 188, 238, 0.4);*/
+  /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+  /*backdrop-filter: blur(5px);*/
+  /*-webkit-backdrop-filter: blur(5px);*/
+  /*border: 1px solid rgba(255, 255, 255, 0.3);*/
 
   text-align: center;
   width: fit-content;
@@ -195,7 +198,7 @@ input[type=number] {
 }
 
 #submit-button {
-  background: linear-gradient(90deg, #141E30, #243B55);
+  background: rgba(255, 255, 255, 0.2);
   padding: 10px 30px 10px 30px;
   border: 1px solid white;
   border-radius: 150px;
@@ -203,19 +206,22 @@ input[type=number] {
   font-family: Quicksand, sans-serif;
   font-size: 30px;
   color: #FFFFFF;
+  transition: background-color 0.4s;
 }
 
-
+#submit-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #240b36;
+  cursor: pointer;
+}
 
 /* ----------------------------------Output CSS---------------------------------- */
 .container_output_wrapper {
-  /*background-color: blue;*/
   background: rgb(114, 188, 238, 0.4);
-  /*border-radius: 16px;*/
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 70px 70px 130px 7px rgba(27, 79, 114, 0.8);
 
   padding: 20px;
   width: 40%;
@@ -224,11 +230,11 @@ input[type=number] {
 
 .output_container {
   background: rgb(114, 188, 238, 0.4);
-  /*border-radius: 16px;*/
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
 }
 
 #pred_price_text {
