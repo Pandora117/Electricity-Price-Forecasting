@@ -6,4 +6,6 @@ def price_prediction(data):
 
     # "data" is a row of input values:
     y_pred = loaded_model.predict(data)
-    return y_pred[0]
+    ans = y_pred[0]
+    ans = round(ans, 3)
+    return ans
