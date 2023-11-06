@@ -1,5 +1,7 @@
 <h1 align="center">Electricity Price Forecasting in New Zealand</h1>
 
+![image](https://github.com/JohnLocke117/Electricity-Price-Forecasting/assets/99555479/992016fc-5e1c-4cee-8531-b76d87b0f7e2)
+
 <p>
 Our project is committed to advancing energy market intelligence in New Zealand 
 through the deployment of cutting-edge machine learning and deep learning models. 
