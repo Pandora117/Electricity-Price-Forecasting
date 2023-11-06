@@ -5,13 +5,8 @@
 }
 
 @font-face {
-  font-family: Belleza;
-  src: url("static/assets/fonts/Belleza-Regular.ttf");
-}
-
-@font-face {
-  font-family: Aileron;
-  src: url("static/assets/fonts/Aileron-Regular.otf");
+  font-family: Dosis;
+  src: url("static/assets/fonts/Dosis-VariableFont_wght.ttf");
 }
 
 /* ----------------------------------Default CSS---------------------------------- */
