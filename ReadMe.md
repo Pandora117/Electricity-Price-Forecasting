@@ -12,8 +12,8 @@ and dependable electricity price forecasts.
 </p>
 
 <h4 align="right">Submitted By:</h3>
-<h3 align="right">Darshan RK - 211AI015</h3>
-<h3 align="right">Varun Arya - 211AI038</h3>
+<h4 align="right">Darshan RK - 211AI015</h3>
+<h4 align="right">Varun Arya - 211AI038</h3>
 
 ## Dataset:
 The data is collected from ENTSOE, a public portal, which contains 4 years of electrical consumption, 
