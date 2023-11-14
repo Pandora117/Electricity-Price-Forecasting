@@ -19,7 +19,66 @@ body {
   background: linear-gradient(90deg, #ADA996 -5%, #F2F2F2 43%, #DBDBDB 100%);
 }
 
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  border: 0.5px solid rgba( 255, 255, 255, 0.5);
+  margin-block: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 32, 42, 1);
+  border-radius: 10px;
+  border: 0.5px solid rgba( 255, 255, 255, 0.8 );
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba( 44, 62, 80, 0.8 );
+}
+
 /* ----------------------------------Header CSS---------------------------------- */
+.dept {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        margin: 0 auto 10px;
+
+        background: rgba(52, 152, 219, 0.25);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.dept-head {
+        /* background: #2196F3; */
+        /* line-height: 130px; */
+        padding-left: 20px;
+
+        font-family: Dosis;
+        font-weight: 300;
+}
+
+.dept-logo {
+        /* background: #2196F3; */
+        text-align: right;
+        padding-right: 20px;
+}
+
+#logo {
+        min-height: 100px;
+        min-width: 100px;
+
+        max-height: 150px;
+        max-width: 150px;
+}
+
 .container {
   background: linear-gradient(90deg, #ff0f7b, #f89b29);
   padding: 10px;
